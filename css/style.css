@@ -277,6 +277,7 @@ body._lock {
     padding: 0 10px;
     margin-bottom: 20px;
 }
+
 .bottom-main__item {
 
 }
@@ -288,7 +289,11 @@ body._lock {
     font-weight: 700;
     margin-bottom: 5px;
 }
-
+@media (max-width: 767px) {
+    .bottom-main__column {
+        flex: 1 1 100%;
+    }
+}
 .footer {
     position: fixed;
     bottom: 0;
