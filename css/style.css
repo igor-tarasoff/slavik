@@ -89,7 +89,7 @@ body._lock {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 80px;  
+    min-height: 70px;  
 }
 .header__logo {
     width: 50px;
