@@ -11,10 +11,9 @@
 
     <div class="wrapper">
         
-        
         <div class="fullscreen">
             <div class="fullscreen__body">
-                <div class="fullscreen__text">Sublimatic</div>
+                <div class="fullscreen__text"></div>
             </div>
             <video autoplay muted loop preload="auto" playsinline class="fullscreen__video">
                 <source type="video/webm" src="video/fullscreen_1.webm">
@@ -22,9 +21,10 @@
             </video>
         </div>
 
-        <header class="header ">
+        
+        <header class="header lock-padding" id="header">
             <div class="header__body _container">
-                <a href="" class="header__logo"><img src="img/logo.svg" alt=""></a>
+                <div class="header__logo">Sublimatic</div>
                 <div class="header__menu menu">
                     <div class="menu__icon">
                         <span></span>
@@ -32,7 +32,7 @@
                     <nav class="menu__body">
                         <ul class="menu__list">
                             <li><a data-goto=".section_home" href="#" class="menu__link">Home</a></li>
-                            <li><a data-goto=".section_blog" href="#" class="menu__link">Blog</a></li>
+                            <li><a data-goto=".section_contacts" href="#" class="menu__link">Contacts</a></li>
                             <li><a data-goto=".section_about" href="#" class="menu__link">About</a></li>
                         </ul>
                     </nav>
@@ -40,13 +40,10 @@
             </div>
         </header>
         <main class="main _container">
-            
-           
-            <a class="main__contact" href="">Contact</a>
             <div class="main__top section_home">
                 We help businesses and Web 3.0 projects to attract investments, customers and increase sales through the creation of 3D video, NFT and IT
             </div>
-            <div class="main__center center-main">
+            <div class="main__center center-main section_home">
                 <div class="center-main__column">
                     <p>Motion design is informational advertising that will create a feeling of dissatisfaction. For example, the consumer saw
                         advertisement for the new iPhone
@@ -75,44 +72,70 @@
                 <div class="bottom-main__body">
                     <div class="bottom-main__column">
                         <div class="bottom-main__item">
-                            <img src="img/troll.jpg" alt="">
+                            <a href="#popup_1" class="popup-link"><img src="img/3D/3D_1.png" alt=""></a>
                             <div class="bottom-main__header">Lucky Maneki</div>
-                            <div class="bottom-main__text">3D Cinematic for NFT Collection</div>
+                            <div class="bottom-main__text">3D Cinematic</div>
                         </div>
                     </div>
                     <div class="bottom-main__column">
                         <div class="bottom-main__item">
-                            <img src="img/troll.jpg" alt="">
-                            <div class="bottom-main__header">Lucky Maneki</div>
-                            <div class="bottom-main__text">3D Cinematic for NFT Collection</div>
+                            <a href="#popup_2" class="popup-link"><img src="img/3D/3D_2.PNG" alt=""></a>
+                            <div class="bottom-main__header">S-150s</div>
+                            <div class="bottom-main__text">3D Motion Design Video</div>
                         </div>
                     </div>
 
                     <div class="bottom-main__column">
                         <div class="bottom-main__item">
-                            <img src="img/troll.jpg" alt="">
-                            <div class="bottom-main__header">Lucky Maneki</div>
-                            <div class="bottom-main__text">3D Cinematic for NFT Collection</div>
+                            <a href="#popup_3" class="popup-link"><img src="img/3D/3D_3.png" alt=""></a>
+                            <div class="bottom-main__header">Metaverse</div>
+                            <div class="bottom-main__text">3D Motion Design Video</div>
                         </div>
                     </div>
-                    <div class="bottom-main__column">
-                        <div class="bottom-main__item">
-                            <img src="img/troll.jpg" alt="">
-                            <div class="bottom-main__header">Lucky Maneki</div>
-                            <div class="bottom-main__text">3D Cinematic for NFT Collection</div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
             
-            <div class="main_block1 section_blog">
-                
-            </div>
-
-            <div class="main_block2 section_about">
-                
-            </div>
+            
+            <div class="main__contacts contacts-main section_contacts">
+                <div class="contacts-main__row">
+                    <div class="contacts-main__column">
+                        <div class="contacts-main__item">
+                            <div class="contacts-main__title-min">
+                                WE’RE IN TOUCH
+                            </div>
+                            <div class="contacts-main__title-max">
+                                Let's make a 
+                                tough project 
+                                together
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts-main__column">
+                        <div class="contacts-main__item">
+                            <div class="contacts-main__form form-main">
+                                <form action="#" id="form" class="form-main__body">
+                                    <div class="form-main__item">
+                                        <label for="formName" class="form-main__label">Your Name</label>
+                                        <input id="formName" class="form-main__input _req" type="text" name="name">
+                                    </div>
+                                    <div class="form-main__item">
+                                        <label for="formEmail" class="form-main__label">Your Email</label>
+                                        <input id="formEmail" class="form-main__input _req _email" type="text" name="email">
+                                    </div>
+                                    <div class="form-main__item">
+                                        <label for="formMessage" class="form-main__label">Comment</label>
+                                        <textarea id="formMessage" class="form-main__input _req" name="message"></textarea>
+                                    </div>
+                                    <button type="submit" class="form-main__button">Send</button>
+                                    <div class="form-main__title">
+                                        Leave a request and we will contact you shortly
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
 
         </main>
 
@@ -124,6 +147,44 @@
                 <a class="footer__links" href="#">TELEGRAM</a>
             </div>
         </footer>
+    </div>
+
+    <div id="popup_1" class="popup">
+        <a href="#header" class="popup__area"></a>
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#header" class="popup__close close-popup">x</a>
+                <div class="popup__title">Lucky Maneki</div>
+                <div class="popup__text">3D Cinematic</div>
+                <div class="popup__video">
+                    <iframe src="https://www.youtube.com/embed/gVw0D1R7tYg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup_2" class="popup">
+        <a href="#header" class="popup__area"></a>
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#header" class="popup__close close-popup">x</a>
+                <div class="popup__title">S-150s</div>
+                <div class="popup__text">3D Motion Design Video</div>
+                <div class="popup__video"><iframe src="https://www.youtube.com/embed/CzRuLtfHX7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div>
+        </div>
+    </div>
+    <div id="popup_3" class="popup">
+        <a href="#header" class="popup__area"></a>
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#header" class="popup__close close-popup">x</a>
+                <div class="popup__title">Metaverse</div>
+                <div class="popup__text">3D Motion Design Video</div>
+                <div class="popup__video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/FTi3w968LQg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="js/script.js"></script>
     
