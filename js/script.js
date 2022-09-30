@@ -48,7 +48,7 @@ if(iconMenu){
 
 //Goto
 
-const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
+const menuLinks = document.querySelectorAll('[data-goto]');
 if(menuLinks.length > 0) {
     menuLinks.forEach(menuLink => {
         menuLink.addEventListener("click", onMenuLinkClick);
@@ -147,6 +147,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 //Шапка вверх вниз
+/*
 let lastScroll = 0;
 const defaultOffset = 200;
 const header = document.querySelector('.header');
@@ -162,7 +163,7 @@ window.addEventListener('scroll', () => {
         header.classList.remove('hide');
     }
     lastScroll = scrollPosition();
-})
+}) */
 
 //popup
 /*

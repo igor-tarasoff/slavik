@@ -66,7 +66,27 @@ body._lock {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 2px;
+    
 }
+.fullscreen__click {
+    position: absolute;
+    bottom: 80px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5) url(../img/arrow-down.svg) center 55px / 20px no-repeat; 
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease 0s;
+}
+.fullscreen__click:hover {
+    background: rgba(255, 255, 255, 0.7) url(../img/arrow-down.svg) center 60px / 20px no-repeat; 
+}
+
 .fullscreen__video {
     position: absolute;
     top: 0;
@@ -82,7 +102,7 @@ body._lock {
     width: 100%;
     z-index: 10;
     background-color: #fff;
-    transition: transform .1s linear;
+    box-shadow: 0px 2px 5px 1px rgba(169, 172, 174, 0.2);
 }
 .header.hide {
     transform: translateY(-70px);
@@ -213,7 +233,7 @@ body._lock {
 }
 
 .main {
-    padding: 100px 20px 0px 20px;
+    padding: 40px 20px 0px 20px;
 }
 .main__top {
     font-weight: 700;
@@ -284,6 +304,7 @@ body._lock {
 }
 .bottom-main__link._link-active:hover {
     background-color: rgb(97, 97, 97);
+    
 }
 .bottom-main__body {
     display: flex;
@@ -316,7 +337,7 @@ body._lock {
     }
 }
 .contacts-main {
-    padding: 60px 0px 150px 0px;
+    padding: 40px 0px 50px 0px;
 }
 .contacts-main__row {
     display: flex;
@@ -499,7 +520,45 @@ textarea.form-main__input {
     position: relative;
     padding: 0px 0px 56% 0px;
 }
+.popup__video video, 
 .popup__video iframe {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Preview page */
+
+.main__preview {
+}
+.preview-main {
+   margin: 60px 0px 50px 60px;
+   position: relative;
+}
+.preview-main__back {
+    position: absolute;
+    top: 10px;
+    left: -60px;
+}
+.preview-main__back img {
+}
+.preview-main__title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.preview-main__text {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.preview-main__video {
+    position: relative;
+    padding: 0px 0px 56% 0px;
+}
+.preview-main__video iframe {
     object-fit: cover;
     position: absolute;
     top: 0;
